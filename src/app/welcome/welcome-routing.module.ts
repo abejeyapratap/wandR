@@ -6,24 +6,13 @@ import { WelcomePage } from './welcome.page';
 const routes: Routes = [
   {
     path: '',
-    component: WelcomePage
+    component: WelcomePage,
   },
   {
-    path: 'today',
-    loadChildren: () => import('./today/today.module').then( m => m.TodayPageModule)
+    path: 'discover',
+    loadChildren: () =>
+      import('./discover/discover.module').then((m) => m.DiscoverPageModule),
   },
-  {
-    path: 'feed',
-    loadChildren: () => import('./feed/feed.module').then( m => m.FeedPageModule)
-  },
-  {
-    path: 'journal',
-    loadChildren: () => import('./journal/journal.module').then( m => m.JournalPageModule)
-  },
-  {
-    path: 'account',
-    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
-  }
 ];
 
 @NgModule({
