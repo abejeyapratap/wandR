@@ -13,6 +13,7 @@ export const environment = {
     messagingSenderId: '638704580824',
     appId: '1:638704580824:web:783e213fafb1df8a1affad',
     measurementId: 'G-PVY9GPGKJ4',
+    databaseURL: 'https://ryfi-apps-default-rtdb.firebaseio.com/',
   },
 };
 

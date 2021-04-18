@@ -46,7 +46,9 @@ export class LocationService {
       }); */
   }
 
+  // Testing function - DELETE!!!!
   private debugPositionsFunctions() {
+    this.positions = [];
     this.positions.push(new Coordinates(0, 0));
     this.positions.push(new Coordinates(0, 1));
     this.positions.push(new Coordinates(2, 2));
@@ -88,7 +90,7 @@ export class LocationService {
         dist = tdist;
       }
     }
-    return dist;
+    return dist / 1609.34;
   }
 
   calculateTotalDist(): number {
@@ -109,7 +111,7 @@ export class LocationService {
       );
       dist += tdist;
     }
-    return dist;
+    return dist / 1609.34;
   }
 
   private showErrorAlert() {

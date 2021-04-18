@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./discover/discover.module').then((m) => m.DiscoverPageModule),
   },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
+  },
 ];
 
 @NgModule({

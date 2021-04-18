@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { FireauthService } from './fireauth.service';
 
-import * as firebase from 'firebase/app';
-import { environment } from '../environments/environment.prod';
+// import * as firebase from 'firebase/app';
+// import 'firebase/auth';
+// import 'firebase/database';
+// import { environment } from '../environments/environment.prod';
 
 @Component({
   selector: 'app-root',
@@ -11,40 +14,11 @@ import { environment } from '../environments/environment.prod';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private fireAuthService: FireauthService) {}
 
   ngOnInit() {
-    firebase.default.initializeApp(environment.firebaseConfig);
-  }
-
-  loginAccount(email, password) {
-    firebase.default
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        var user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-      });
-  }
-
-  createAccount(email, password) {
-    firebase.default
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        var user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ..
-      });
+    /* firebase.default.initializeApp(environment.firebaseConfig);
+    this.debugShit(); */
+    this.fireAuthService.appInitialize();
   }
 }

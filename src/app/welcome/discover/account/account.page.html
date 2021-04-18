@@ -17,7 +17,9 @@
             <ion-card-title>Username</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-textarea type="text" maxlength="100" placeholder="Fill in your bio..."></ion-textarea>
+            <ion-textarea type="text" maxlength="100" placeholder="Fill in your bio..."
+              value="{{ fetchBio('example') }}">
+            </ion-textarea>
           </ion-card-content>
         </ion-card>
         <ion-card>
@@ -25,7 +27,8 @@
             <ion-card-title>Add Friend:</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-input placeholder="Enter Friend's Username"></ion-input>
+            <ion-input placeholder=" Enter Friend's Username">
+            </ion-input>
           </ion-card-content>
         </ion-card>
       </ion-col>

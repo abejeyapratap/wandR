@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>journal</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Journal</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-list>
+          <ion-item>
+            <ion-avatar slot="start">
+              4/21
+            </ion-avatar>
+            <ion-label>
+              <h2>You went biking</h2>
+              <h3>Total: 9 miles, Max: 4 miles</h3>
+            </ion-label>
+          </ion-item>
 
+          <ion-item>
+            <ion-avatar slot="start">
+              4/20
+            </ion-avatar>
+            <ion-label>
+              <h2>You went to the park</h2>
+              <h3>Total: 8 miles, Max: 3 miles</h3>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
