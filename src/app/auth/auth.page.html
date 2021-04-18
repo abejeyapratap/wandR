@@ -1,11 +1,39 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button color="primary" (click)="onLogin()">
-    Login
-  </ion-button>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-card color="light">
+          <img src="../../../../assets/img/login.png" style="width: 75%" />
+        </ion-card>
+        <ion-card color="light">
+          <ion-card-header>
+            <!-- <ion-card-title>Email: </ion-card-title> -->
+            <ion-card-content class="ion-no-padding">
+              <ion-item color="medium">
+                <ion-label position="floating">Username:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item color="medium">
+                <ion-label position="floating">Password:</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card-header>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button size="large" color="primary" (click)="onLogin()">Login</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

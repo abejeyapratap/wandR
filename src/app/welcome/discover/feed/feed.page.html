@@ -12,23 +12,13 @@
     <ion-row>
       <ion-col class="ion-text-center">
         <ion-list>
-          <ion-item>
+          <ion-item *ngFor="let post of generatePosts()">
             <ion-avatar slot="start">
-              <img src="../../../../assets/img/louisTest.png">
+              <img [src]="post.profile">
             </ion-avatar>
             <ion-label>
-              <h2>Among Us Imposter</h2>
-              <h3>I flew 4E10^25 miles through deep space!</h3>
-            </ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-avatar slot="start">
-              <img src="../../../../assets/img/kumar.jpg">
-            </ion-avatar>
-            <ion-label>
-              <h2>Kumar</h2>
-              <h3>I went for a 10 mile bike ride.</h3>
+              <h2>{{ post.name }}</h2>
+              <h3>{{ post.body }}</h3>
             </ion-label>
           </ion-item>
         </ion-list>

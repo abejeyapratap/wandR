@@ -49,9 +49,9 @@ export class LocationService {
   // Testing function - DELETE!!!!
   private debugPositionsFunctions() {
     this.positions = [];
-    this.positions.push(new Coordinates(0, 0));
-    this.positions.push(new Coordinates(0, 1));
-    this.positions.push(new Coordinates(2, 2));
+    this.positions.push(new Coordinates(27.257691, -80.413399));
+    this.positions.push(new Coordinates(27.262842, -80.405476));
+    this.positions.push(new Coordinates(27.257691, -80.413399));
     console.log(`Max Dist: ${this.calculateMaxDist()}`);
     console.log(`Total Dist: ${this.calculateTotalDist()}`);
   }

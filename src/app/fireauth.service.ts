@@ -68,17 +68,25 @@ export class FireauthService {
     return t;
   }
 
-  getFeed(uid: string) {
+  getFeed(uid: string): Post[] {
     var posts: Post[] = [];
     var friends;
     firebase.default
       .database()
-      .ref(`userdata/${uid}/friends`)
+      .ref(`userdata`)
       .on('value', (snapshot) => {
-        console.log(snapshot.val());
-        friends = snapshot.val();
+        friends = snapshot.child(`${uid}/friends`).val();
+        console.log(friends);
+        for (var f in friends) {
+          var n = snapshot.child(`${friends[f]}/username`).val();
+          var pp = snapshot.child(`${friends[f]}/profile`).val();
+          var j = snapshot.child(`${friends[f]}/journal`).val()[0];
+          let p = new Post(n, j, pp);
+          posts.push(p);
+        }
+        console.log(posts);
       });
-    console.log(friends[0]);
+    return posts;
   }
 }
 
