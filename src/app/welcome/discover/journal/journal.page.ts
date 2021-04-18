@@ -1,3 +1,4 @@
+// BRUTALLY HARD CODED!!!!
 import { Component, OnInit } from '@angular/core';
 import { JournalList } from './journal.model';
 

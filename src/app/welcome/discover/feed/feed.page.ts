@@ -15,7 +15,7 @@ export class FeedPage implements OnInit {
 
   generatePosts() {
     if (this.finalPosts != null && this.finalPosts.length > 0)
-      return this.finalPosts; //document.write(this.finalPosts);
+      return this.finalPosts;
     let postlist = this.fireAuthService.getFeed('example');
     this.finalPosts = postlist;
     return postlist;
