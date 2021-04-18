@@ -17,7 +17,7 @@ export class JournalPage implements OnInit {
     {
       date: '4/8',
       activity: 'You went to the park!',
-      description: 'Total: 5 miles, Max: 9.4 miles',
+      description: 'Total: 8 miles, Max: 5.4 miles',
     },
     {
       date: '4/9',
@@ -27,12 +27,12 @@ export class JournalPage implements OnInit {
     {
       date: '4/10',
       activity: 'You went to the park!',
-      description: 'Total: 5 miles, Max: 9.4 miles',
+      description: 'Total: 5 miles, Max: 3.2 miles',
     },
     {
       date: '4/11',
       activity: 'You went biking!',
-      description: 'Total: 9 miles, Max: 4 miles',
+      description: 'Total: 2.3 miles, Max: 1.2 miles',
     },
     {
       date: '4/12',
@@ -42,12 +42,12 @@ export class JournalPage implements OnInit {
     {
       date: '4/13',
       activity: 'You went biking!',
-      description: 'Total: 9 miles, Max: 4 miles',
+      description: 'Total: 8 miles, Max: 6.2 miles',
     },
     {
       date: '4/14',
       activity: 'You went to the park!',
-      description: 'Total: 5 miles, Max: 9.4 miles',
+      description: 'Total: 7.6 miles, Max: 6 miles',
     },
     {
       date: '4/15',
@@ -57,7 +57,7 @@ export class JournalPage implements OnInit {
     {
       date: '4/16',
       activity: 'You went to the park!',
-      description: 'Total: 5 miles, Max: 9.4 miles',
+      description: 'Total: 5 miles, Max: 3.4 miles',
     },
     {
       date: '4/17',
