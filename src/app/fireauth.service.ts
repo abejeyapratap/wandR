@@ -13,10 +13,10 @@ export class FireauthService {
 
   appInitialize() {
     firebase.default.initializeApp(environment.firebaseConfig);
-    this.debugShit();
+    this.debug();
   }
 
-  private debugShit() {
+  private debug() {
     //this.loginAccount('test', 'test');
     this.getFeed('example');
   }
