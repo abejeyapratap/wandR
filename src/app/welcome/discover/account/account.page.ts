@@ -17,7 +17,7 @@ export class AccountPage implements OnInit {
   fetchBio(id: string) {
     if (this.bio == null) {
       if (!this.searching) {
-        this.bio = this.fireAuthService.getUserBio(id);
+        this.bio = this.fireAuthService.getUserData(id, 'bio'); // .getUserData(id, 'bio');
         /*this.fireAuthService.getUserBio(id).then((b) => {
           this.bio = b;
         }); */

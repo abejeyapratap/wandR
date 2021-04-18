@@ -17,11 +17,11 @@ export class FireauthService {
   }
 
   private debugShit() {
-    this.loginAccount('test', 'test');
-    console.log(this.getUserBio('example'));
+    //this.loginAccount('test', 'test');
+    this.getFeed('example');
   }
 
-  loginAccount(email, password) {
+  loginAccount(email: string, password: string) {
     firebase.default
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -36,7 +36,7 @@ export class FireauthService {
       });
   }
 
-  createAccount(email, password) {
+  createAccount(email: string, password: string) {
     firebase.default
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -56,15 +56,36 @@ export class FireauthService {
     return firebase.default.auth().currentUser.uid;
   }
 
-  getUserBio(uid: string): string {
+  getUserData(uid: string, data: string): string {
     let t = '';
     firebase.default
       .database()
-      .ref(`userdata/${uid}/bio`)
+      .ref(`userdata/${uid}/${data}`)
       .on('value', (snapshot) => {
         console.log(snapshot.val());
         t = snapshot.val();
       });
     return t;
   }
+
+  getFeed(uid: string) {
+    var posts: Post[] = [];
+    var friends;
+    firebase.default
+      .database()
+      .ref(`userdata/${uid}/friends`)
+      .on('value', (snapshot) => {
+        console.log(snapshot.val());
+        friends = snapshot.val();
+      });
+    console.log(friends[0]);
+  }
+}
+
+export class Post {
+  constructor(
+    public name: string,
+    public body: string,
+    public profile: string
+  ) {}
 }
