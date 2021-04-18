@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>account</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Account</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-card>
+          <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" style="width: 40%" />
+          <ion-card-header>
+            <ion-card-title>Username</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-textarea type="text" maxlength="100" placeholder="Fill in your bio..."></ion-textarea>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Add Friend:</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-input placeholder="Enter Friend's Username"></ion-input>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
