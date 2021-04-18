@@ -1,4 +1,4 @@
-# wandR
+# wandR: An Exploration App
 
 IEEE DragonHacks 2021
 
@@ -11,3 +11,9 @@ Total Distance is fairly self explanatory: it measures the overall distance one 
 Max Distance is a little different: On the start of a new day, your "home" coordinate is recorded locally on your device. Then, GPS is used to determine the maximum straight line distance you reach away from "home". We felt like this feature would be something interesting to see; just how far do you go every day?
 
 Additionally, we have the "Feed" which shows off the user's added friends. Their activities are listed on this page, as well as their distances for the day. To us, this felt like a fun way to share the experiences each of us has every single day.
+
+## How to run it:
+Using your command-line / terminal:
+    git clone
+    npm install
+    ionic serve
