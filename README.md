@@ -1,9 +1,11 @@
 # wandR: An Exploration App
 
 ![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/488/382/datas/gallery.jpg)
+
 ## Winner: Best Outdoor Hack at IEEE DragonHacks 2021
 
 wandR is a cross-platform, native mobile application that works on both iOS and Android devices. It's built using Ionic-Angular for the front-end and Google Firebase for the back-end.
+
 ![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/488/397/datas/gallery.jpg)
 
 ## Inspiration
