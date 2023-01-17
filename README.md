@@ -8,6 +8,7 @@ wandR is a cross-platform, native mobile application that works on both iOS and 
 
 
 |![image](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/394/datas/original.png) | ![image](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/391/datas/original.png) |
+|-|-|
 
 ## Inspiration
 Our team wanted to build an app that would encourage users to go outside and find new experiences. We came up with several different ideas, but we believed that focusing on a project that promotes good physical and mental health would be amazing. We settled on wandR as we feel as it really contextualizes how far away from home you might be in a day, and how far you travel without even realizing it.
