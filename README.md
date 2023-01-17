@@ -6,7 +6,7 @@
 
 wandR is a cross-platform, native mobile application that works on both iOS and Android devices. It's built using Ionic-Angular for the front-end and Google Firebase for the back-end.
 
-![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/488/397/datas/gallery.jpg)
+![image](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/394/datas/original.png)
 ![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/488/394/datas/gallery.jpg)
 
 ## Inspiration
