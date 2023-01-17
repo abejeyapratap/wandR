@@ -1,6 +1,6 @@
 # wandR: An Exploration App
 
-![image](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/488/382/datas/gallery.jpg)
+![image](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/488/382/datas/original.jpg)
 
 ## Winner: Best Outdoor Hack at IEEE DragonHacks 2021
 
